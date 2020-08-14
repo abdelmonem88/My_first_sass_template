@@ -1,0 +1,55 @@
+@include lg {
+}
+
+@include md {
+	.h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@include sm {
+	nav {
+		flex-direction: column;
+
+		.logo {
+			text-align: left;
+			display: flex;
+			justify-content: space-between;
+
+			.nav-toggler {
+				display: block;
+			}
+		}
+		.list-container {
+			overflow: hidden;
+			height: 0;
+
+			ul {
+				flex-direction: column;
+				text-align: center;
+			}
+		}
+	}
+
+	.service {
+		.service-parent {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.images {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@include xs {
+	.service {
+		.service-parent {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.images {
+		grid-template-columns: 1fr;
+	}
+}

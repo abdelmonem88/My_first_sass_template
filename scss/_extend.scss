@@ -1,0 +1,40 @@
+// extend
+
+.h2 {
+	font-size: 2.5rem;
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: normal;
+}
+
+.span {
+	display: block;
+	width: 40px;
+	height: 3px;
+	background-color: $primaryVColor;
+	margin: 15px auto;
+}
+
+.p {
+	margin: 1.5rem 0;
+	color: $secondaryColor;
+	letter-spacing: 2px;
+	line-height: 1.5;
+}
+
+.button {
+	background-color: $primaryVColor;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border-radius: 25px;
+	border: 0;
+	font-weight: bold;
+	cursor: pointer;
+	@include Trans($time);
+
+	&:hover {
+		background-color: #fff;
+		color: $primaryVColor;
+	}
+}
